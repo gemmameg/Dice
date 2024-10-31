@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dice Spinner</title>
+    <title>Metamais Kauliņš</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -23,15 +23,15 @@
 </head>
 <body>
 
-    <h1>Dice Spinner</h1>
-    <p>Click the button to roll the dice!</p>
-    <button onclick="rollDice()">Roll Dice</button>
+    <h1>Virtuālais metamais kauliņš</h1>
+    <p>Nospied pogu, lai mestu kauliņu!</p>
+    <button onclick="rollDice()">Mest Kauliņu</button>
     <div id="result">🎲</div>
 
     <script>
         function rollDice() {
-            const result = Math.floor(Math.random() * 6) + 1; // Generates a number between 1 and 6
-            document.getElementById("result").textContent = "You rolled a " + result + "!";
+            const result = Math.floor(Math.random() * 6) + 1; 
+            document.getElementById("result").textContent = "Tu uzmeti " + result + "!";
         }
     </script>
 
