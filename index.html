@@ -25,11 +25,11 @@
 
     <h1>Virtuālais metamais kauliņš</h1>
     <p>Nospied pogu, lai mestu kauliņu!</p>
-    <button onclick="rollDice()">Mest Kauliņu</button>
+    <button onclick="mest()">Mest Kauliņu</button>
     <div id="result">🎲</div>
 
     <script>
-        function rollDice() {
+        function mest() {
             const result = Math.floor(Math.random() * 6) + 1; 
             document.getElementById("result").textContent = "Tu uzmeti " + result + "!";
         }
